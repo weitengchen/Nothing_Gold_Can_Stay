@@ -1,24 +1,469 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X5F-r9-t9m">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--那年花開月正圓-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Nothing_Gold_Can_Stay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="webhome" translatesAutoresizingMaskIntoConstraints="NO" id="ZrW-s7-3Mz">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="那年花開月正圓" id="h65-Nh-fTt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2021.5999999999999" y="131.52709359605913"/>
+        </scene>
+        <!--人物介紹-->
+        <scene sceneID="5lz-Kq-ivr">
+            <objects>
+                <viewController id="juT-uH-v4f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cu7-XH-Bdu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="character_back" translatesAutoresizingMaskIntoConstraints="NO" id="GHC-KV-AAs">
+                                <rect key="frame" x="0.0" y="88" width="375" height="663"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actress" translatesAutoresizingMaskIntoConstraints="NO" id="bx7-za-IEh">
+                                <rect key="frame" x="16" y="110" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrO-TE-1C0">
+                                <rect key="frame" x="135" y="142" width="41" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="周瑩"/>
+                                <connections>
+                                    <segue destination="4Xz-S3-bBK" kind="show" id="7Zb-E0-CCJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="演員  孫儷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhT-O0-UQG">
+                                <rect key="frame" x="135" y="110" width="65" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actor" translatesAutoresizingMaskIntoConstraints="NO" id="ntH-qj-4KS">
+                                <rect key="frame" x="16" y="226" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iV7-SD-vh8">
+                                <rect key="frame" x="135" y="258" width="41" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="吳聘"/>
+                                <connections>
+                                    <segue destination="rub-1S-9ON" kind="show" id="gON-D5-htj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actor_02" translatesAutoresizingMaskIntoConstraints="NO" id="Cyg-JY-wUK">
+                                <rect key="frame" x="16" y="343" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1v3-DS-6DC">
+                                <rect key="frame" x="135" y="373" width="62" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="沈星移"/>
+                                <connections>
+                                    <segue destination="SlE-ZQ-H63" kind="show" id="WpF-tS-3mC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actor_03" translatesAutoresizingMaskIntoConstraints="NO" id="Dfo-36-f0U">
+                                <rect key="frame" x="16" y="458" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5j-pM-Ujx">
+                                <rect key="frame" x="135" y="490" width="62" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="趙白石"/>
+                                <connections>
+                                    <segue destination="3Sp-GD-SeB" kind="show" id="bb8-Zn-pyP"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actress_02" translatesAutoresizingMaskIntoConstraints="NO" id="452-ex-zvj">
+                                <rect key="frame" x="16" y="575" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U68-fc-pL1">
+                                <rect key="frame" x="135" y="607" width="62" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="胡詠梅"/>
+                                <connections>
+                                    <segue destination="Qdp-si-l1p" kind="show" id="k3g-ga-qBN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="演員  胡杏兒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h9-Ok-y61">
+                                <rect key="frame" x="135" y="575" width="80" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="知書達禮、才貌雙全卻也心氣高傲的胡家大小姐，個性有些偏執任性。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wa-HL-oBE">
+                                <rect key="frame" x="217" y="591" width="142" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正直愛民、剛正不阿，卻也有些食古不化的七品涇陽縣令，富有正義感的趙白石曾得罪王爺載漪，使自己多次遭貶謫，不過最後還是受到朝廷重用。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="So9-ze-4Yd">
+                                <rect key="frame" x="217" y="474" width="142" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="沈家二少爺，外表是一個喜愛花天酒地的紈絝子弟，從小備受寵愛、好搶風頭..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr2-Uc-cEg">
+                                <rect key="frame" x="217" y="357" width="142" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="風度翩翩的吳家東院大少爺，身負五品同知官銜，心地純良、溫文儒雅，與周瑩夫妻恩愛、相知相惜。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMl-YB-Rbe">
+                                <rect key="frame" x="217" y="242" width="142" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="吳家東院的大當家，丈夫吳聘早逝，憑一己之力撐起了整個吳家，並將其發揚光大成為陝西女首富，在商場上叱吒風雲。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCW-fO-Re8">
+                                <rect key="frame" x="217" y="126" width="142" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="演員  任重" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me5-wx-wIJ">
+                                <rect key="frame" x="135" y="458" width="65" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="演員  陳曉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWq-0l-XVh">
+                                <rect key="frame" x="135" y="343" width="65" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="演員  何潤東" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nf-YM-YTP">
+                                <rect key="frame" x="135" y="226" width="80" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kGb-qm-9Oj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="人物介紹" id="e8Z-jl-qh8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZB-9X-IvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2021.5999999999999" y="1630.7881773399015"/>
+        </scene>
+        <!--周瑩-->
+        <scene sceneID="hXN-p9-krY">
+            <objects>
+                <viewController title="周瑩" id="4Xz-S3-bBK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dQ2-tR-BaA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actress_back" translatesAutoresizingMaskIntoConstraints="NO" id="yfR-Yr-ncz">
+                                <rect key="frame" x="0.0" y="88" width="375" height="654"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4O7-WU-7IO">
+                                <rect key="frame" x="16" y="341" width="183" height="377"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">吳家東院的大當家，丈夫吳聘早逝，憑一己之力撐起了整個吳家，並將其發揚光大成為陝西女首富，在商場上叱吒風雲。
+周瑩出身江湖，從小跟著養父四處行騙、討生活，後因緣際會遇見丈夫吳聘，受其感化並開始接觸生意買賣，意外發現自己經商的才能。 周瑩行事絲毫不受理法約束，行為常離經叛道，但她擅長洞察先機，還敏銳果敢、重情義，為了心中的正義那怕粉身碎骨也在所不辭。周瑩富有仁心，從不吝嗇財帛幫助貧困之人，在重振吳家東院後更是四處廣施恩德、救貧濟災。更難得是她為愛獨守一生，曾在祠堂發誓生生世世不改嫁，誓言要為吳家平反軍需案的冤情，讓吳家重現往日榮光。 庚子國難後，慈禧與光緒逃難至陝西，點名吳家東院接駕，周瑩在太后問話時雖然不小心說出變法口號惹慈禧不悅，不過她的身世和談吐讓慈禧頗為欣賞，或許是同為寡婦掌家，讓她對周瑩產生了憐惜與欽佩，聖駕回鑾後賜周瑩一品誥命夫人。周瑩的一生，可以用「堅守」和「追憶」這兩個詞來形容。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bkR-Id-dlc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzV-e3-G7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2978" y="870"/>
+        </scene>
+        <!--劇情大綱-->
+        <scene sceneID="9rK-wW-1fU">
+            <objects>
+                <viewController id="gEo-3j-UWc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jf4-gh-860">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="synopsis" translatesAutoresizingMaskIntoConstraints="NO" id="GGm-fF-BsQ">
+                                <rect key="frame" x="0.0" y="88" width="375" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DX2-CR-Zaf">
+                                <rect key="frame" x="31" y="281" width="312" height="392"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">1884年（清光緒十年），周瑩跟著養父周老四來到關中，輸光錢財的周老四將周瑩賣到沈家當丫頭。周瑩逃跑時躲進吳家東院大少爺吳聘的轎中，頗具商業頭腦的周瑩得到了吳蔚文的賞識，被獲許留在吳家。沈星移懷疑沈家大少爺被吳聘暗殺，出手將其打傷。為救已昏迷的吳聘，周瑩嫁入吳家沖喜，吳聘甦醒了過來，一夕之間周瑩成為了吳家的少奶奶。因遭人栽贓陷害，吳家家破人亡、處境困窘，周瑩毅然決然要重振吳家東院。
+
+後來，周瑩入股陝西機器織布局，在地方官積極推動洋務運動之際，卻遭到民間傳統織布從業民眾的聚眾抗議，廠房設備被人入侵破壞，陝西機器織布局面臨重建。為了拯救深陷牢獄的周瑩，吳家交出陝西機器織布局的所有股份，以及與洋商的生絲合約換得周瑩一命。出獄後的周瑩重燃鬥志建立涇陽布廠，吳家產業再次有了新起色。庚子國難(八國聯軍)，周瑩用自己的方式擔起了吳家大業的重振之風，又引領了動盪時局的改革之路 。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Iyt-OC-rbl"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="劇情大綱" id="XMH-bf-MzQ" userLabel="劇情大綱"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4b-py-u7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2023" y="870"/>
+        </scene>
+        <!--首頁-->
+        <scene sceneID="gPA-Vc-Af0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0PL-3u-TWP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首頁" image="home" id="IZK-rq-Pc1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4UX-zq-iAa">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SEG-q1-lb3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3C-kt-BHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170.4000000000001" y="131.52709359605913"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ltv-ai-1BI">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="X5F-r9-t9m" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aIb-yC-maO">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0PL-3u-TWP" kind="relationship" relationship="viewControllers" id="9cH-Ej-P3D"/>
+                        <segue destination="RrN-0a-YZz" kind="relationship" relationship="viewControllers" id="WCY-wu-jnh"/>
+                        <segue destination="zpo-i3-JQq" kind="relationship" relationship="viewControllers" id="V4V-Gs-1Cd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGj-nx-qy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="131.52709359605913"/>
+        </scene>
+        <!--劇情大綱-->
+        <scene sceneID="zMl-ge-XuL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RrN-0a-YZz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="劇情大綱" image="bookmark" id="H7C-gv-aid"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kbk-bc-9Ef">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gEo-3j-UWc" kind="relationship" relationship="rootViewController" id="trb-1H-OBD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0N-ra-C2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="870"/>
+        </scene>
+        <!--人物介紹-->
+        <scene sceneID="2Zy-4L-KFG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zpo-i3-JQq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="人物介紹" image="drama" id="342-U4-Ibs"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fQO-yK-Vur">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="juT-uH-v4f" kind="relationship" relationship="rootViewController" id="X6S-lc-dZY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2m2-tj-xZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="1631"/>
+        </scene>
+        <!--吳聘-->
+        <scene sceneID="ays-gP-nqz">
+            <objects>
+                <viewController title="吳聘" id="rub-1S-9ON" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KoB-Kp-943">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actor_back" translatesAutoresizingMaskIntoConstraints="NO" id="Yhi-eH-S6d">
+                                <rect key="frame" x="0.0" y="88" width="375" height="654"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ucs-vc-tNJ">
+                                <rect key="frame" x="16" y="111" width="246" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">風度翩翩的吳家東院大少爺，身負五品同知官銜，心地純良、溫文儒雅，與周瑩夫妻恩愛、相知相惜。
+因沈星移誤以為沈月生為他所殺害，將吳聘打傷，昏迷的吳聘在周瑩自願嫁入吳家沖喜後醒來。後被杜明禮下毒殺害，毒發從棗樹上摔落而英年早逝，是周瑩亦師亦友的丈夫。十分疼愛周瑩。周瑩也終究為他守寡一輩子。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Y2a-9Y-iCV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2DF-8h-iDK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2977" y="1631"/>
+        </scene>
+        <!--沈星移-->
+        <scene sceneID="DVQ-rw-xIm">
+            <objects>
+                <viewController title="沈星移" id="SlE-ZQ-H63" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C4o-SR-agr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actor_02_back" translatesAutoresizingMaskIntoConstraints="NO" id="ttg-6b-EW5">
+                                <rect key="frame" x="0.0" y="88" width="375" height="654"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KwB-5s-h3u">
+                                <rect key="frame" x="16" y="343" width="251" height="251"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">沈家二少爺，外表是一個喜愛花天酒地的紈絝子弟，從小備受寵愛、好搶風頭，內心卻不失陽光和單純，對來到家中當丫鬟的周瑩一往情深，兩人經常拌嘴爭執，誓言總有一天要讓周瑩愛上自己。也正是心存這樣的善良，在與周瑩相處過程中，沈星移逐漸有了脫胎換骨的成長與蛻變，他的衝動化為激情、不羈轉為堅毅。隨著沈家生意日漸壯大，沈四海打算利用沈星移的婚姻鞏固地位，被逼無奈的沈星移前往上海開設星月貿易行，與西洋人做起了生意。
+沈星移為了解救遭人陷害的周瑩，前往京城劫獄而身負重傷，為了脫罪抽身，父親沈四海助他佯裝自己在牢裡染上瘧疾而死，實際上是改名換姓，參加清末革新變法運動，化名康卓文。投身革命運動的沈星移，在慈禧與光緒帝巡遊涇陽時潛入吳家東院，計畫刺殺行動，不料最後被趙白石察覺而事敗，為了保全所有人，沈星移困住周瑩、擊暈趙白石，隻身一人衝向官兵，最後被亂刀刺死、慷慨赴義。和周瑩一起經歷過生與死，為周瑩此生最後的摯愛。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JV3-ff-y99"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xWT-F3-p9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2022" y="2376"/>
+        </scene>
+        <!--趙白石-->
+        <scene sceneID="s0v-AL-9Sx">
+            <objects>
+                <viewController title="趙白石" id="3Sp-GD-SeB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DKs-Hs-SMq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actor_03_back" translatesAutoresizingMaskIntoConstraints="NO" id="Tjc-r2-pkL">
+                                <rect key="frame" x="0.0" y="88" width="375" height="654"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w8r-sI-nyx">
+                                <rect key="frame" x="29" y="343" width="251" height="251"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">正直愛民、剛正不阿，卻也有些食古不化的七品涇陽縣令，富有正義感的趙白石曾得罪王爺載漪，使自己多次遭貶謫，不過最後還是受到朝廷重用。為了解救身陷牢獄的周瑩，假意投靠王爺而升為陝甘總督（陝西巡撫）。
+趙白石為人保守且一絲不苟，對於周瑩出格的野蠻舉動十分不能認同，認為她在外拋頭露面不守婦道，後來卻因她的正直與善良而動容，從此默默地對周瑩產生了情愫。不料卻因為吳漪的設計酒後亂性，不情願地娶其為妻。在周瑩身陷囹圄時，趙白石與周瑩結拜成了義兄妹。吳漪難產死後，在沈星移的鼓勵下鼓起勇氣向吳家長輩提親欲娶周瑩，也將自己的心意向周瑩表露，不過因為周瑩始終放不下沈星移，兩人有緣無分。</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ze5-Ho-fz0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Mm-Eg-wfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2977" y="2376"/>
+        </scene>
+        <!--胡詠梅-->
+        <scene sceneID="F7R-4w-w3g">
+            <objects>
+                <viewController title="胡詠梅" id="Qdp-si-l1p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NIO-SF-LQf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actress_02_back" translatesAutoresizingMaskIntoConstraints="NO" id="EYe-sG-jif">
+                                <rect key="frame" x="0.0" y="88" width="375" height="654"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mJk-P7-0ow">
+                                <rect key="frame" x="29" y="343" width="251" height="251"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">知書達禮、才貌雙全卻也心氣高傲的胡家大小姐，個性有些偏執任性。與吳聘是青梅竹馬，自小戀慕吳聘，是街坊鄰居眼中的天作之合。
+在吳聘昏迷欲嫁入吳家沖喜時，因為父親胡志存遭人慫恿而阻攔，撞牆暈厥而無法與吳聘成親，從此對周瑩嫉妒生恨。在父親上吊身亡後，更將她視為殺父仇人與一生的死敵。家道敗落後，胡詠梅開設古月洋布莊販售炙手可熱的洋布，曾在陝西商場叱吒一時，試圖打垮周瑩，但後被周瑩擊垮，以致破產、失去一切。胡詠梅在吳聘墳前知道真相後，失手殺死周老四，並於吳聘的墓前畏罪自盡。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Lyd-sO-d4b"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNR-8o-eHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3844" y="2376"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="actor" width="100" height="100"/>
+        <image name="actor_02" width="100" height="100"/>
+        <image name="actor_02_back" width="375" height="641"/>
+        <image name="actor_03" width="100" height="100"/>
+        <image name="actor_03_back" width="375" height="641"/>
+        <image name="actor_back" width="375" height="641"/>
+        <image name="actress" width="100" height="100"/>
+        <image name="actress_02" width="100" height="100"/>
+        <image name="actress_02_back" width="375" height="641"/>
+        <image name="actress_back" width="375" height="641"/>
+        <image name="bookmark" width="30" height="30"/>
+        <image name="character_back" width="375" height="641"/>
+        <image name="drama" width="30" height="30"/>
+        <image name="home" width="30" height="30"/>
+        <image name="synopsis" width="375" height="164"/>
+        <image name="webhome" width="375" height="641"/>
+    </resources>
 </document>
